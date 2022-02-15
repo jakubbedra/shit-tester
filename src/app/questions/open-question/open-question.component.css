@@ -1,0 +1,15 @@
+.answer-open {
+  font-size: 20px;
+}
+
+p {
+  white-space: pre-line;
+}
+
+textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  width: 100%;
+}

@@ -1,0 +1,10 @@
+<div class="questions-div">
+  <h1>Lebiedź:</h1>
+  <p>Wynik: {{score}}/30</p>
+  <div *ngFor="let q of questions; let i = index">
+    <app-lebiedz-question
+      [question]="q"
+      [index]="i"
+    ></app-lebiedz-question>
+  </div>
+</div>

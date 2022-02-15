@@ -1,0 +1,8 @@
+<div class="exam">
+  <app-lebiedz-question-list></app-lebiedz-question-list>
+</div>
+<div class="exam">
+  <button class="ui-button" (click)="onSubmit()" *ngIf="!submitted">SUBMIT</button>
+  <button class="ui-button" (click)="onReload()" *ngIf="submitted">NEW EXAM</button>
+</div>
+<!--(click)="calculateClosedQuestionsScore()"-->

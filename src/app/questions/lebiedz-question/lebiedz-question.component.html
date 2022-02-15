@@ -1,0 +1,12 @@
+<div>
+  <p>{{index + 1}}. {{question.content}}</p>
+  <div *ngFor="let answer of question.answers; let i = index">
+    <label for="answer{{i}}"
+           [class.answer-right]="question.submitted && question.correctAnswer == i"
+           [class.answer-wrong]="question.submitted && question.correctAnswer !== i &&
+           question.selectedAnswers.indexOf(i) > -1">
+      <input id="answer{{index}}_{{i}}" name="answers{{this.index}}" type="checkbox" (click)="onSelectAnswer(i)"/>
+      {{answer}}
+    </label>
+  </div>
+</div>
